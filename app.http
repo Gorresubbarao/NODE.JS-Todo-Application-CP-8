@@ -1,0 +1,64 @@
+GET https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/?status=TO%20DO
+
+###
+
+GET https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/?priority=HIGH
+
+###
+
+GET https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/?priority=HIGH&status=IN%20PROGRESS
+
+###
+
+GET https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/?search_q=Play
+
+
+####
+
+
+GET https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/2/
+
+
+###
+
+POST https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+###
+
+PUT https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/2/
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
+
+###
+
+
+PUT https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/3/
+Content-Type: application/json
+
+{
+  "priority": "HIGH"
+}
+
+###
+
+PUT https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/4/
+Content-Type: application/json
+
+{
+  "todo": "Some task"
+}
+
+###
+
+DELETE https://venkatasubbaraohow31njscprhnky.drops.nxtwave.tech/todos/10/
